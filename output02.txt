@@ -1,0 +1,3 @@
+Case #1: Impossible
+Case #2: NW
+Case #3: NWWNW

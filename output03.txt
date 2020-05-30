@@ -1,0 +1,5 @@
+Case #1: ES
+Case #2: SSWS
+Case #3: EN
+Case #4: EESS
+Case #5: ENEE

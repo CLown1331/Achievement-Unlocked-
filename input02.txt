@@ -1,0 +1,19 @@
+3
+5 5
+..X..
+..E..
+..XX.
+XXXX.
+XS..X
+5 5
+XXXX.
+.X.X.
+X...X
+E..XX
+XSXXX
+5 5
+XXXX.
+E.X.X
+X....
+.X.SX
+X...X
