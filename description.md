@@ -15,8 +15,8 @@ G<sub>x, y</sub> = ['X.', 'S', 'E'],
 where X = Impassable point.
 where . = Passable point.
 where S = Starting point.
-where . = End point.
+where E = End point.
 
 **Output format:**
 
-Case #$: s, where s =  lexicographically smallest path if a path exists, else s = "Impossible", $ = number of case.
+Case #C: s, where s = lexicographically smallest path if a path exists, else s = "Impossible", C = number of case.
