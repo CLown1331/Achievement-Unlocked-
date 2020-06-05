@@ -1,71 +1,46 @@
 #include <iostream>
 #include <cstring>
+#include <cassert>
+#include <numeric>
 #include <queue>
+#include <cmath>
 #include <map>
 using namespace std;
-
-int t, n, m, cs, c;
-char s[2005][2005];
-int dx[] = {0, -1, 1, 0};
-int dy[] = {1, 0, 0, -1};
-char direction[] = "ENSW";
-bool vis[2005][2005];
-map <int, string> mp[2005];
-
-string bfs() {
-    memset(vis, 0, sizeof vis);
-    for (int i = 0; i < n; i++) {
-        mp[i].clear();
-    }
-    queue <int> q;
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            if (s[i][j] != 'S') {
-                continue;
-            }
-            q.push(i);
-            q.push(j);
-            vis[i][j] = true;
-        }
-    }
-    while (!q.empty()) {
-        int x = q.front(); q.pop();
-        int y = q.front(); q.pop();
-        for (int i = 0; i < 4; i++) {
-            int nx = x + dx[i];
-            int ny = y + dy[i];
-            if (nx < 0 || nx >= n || ny < 0 || ny >= m || vis[nx][ny] || s[nx][ny] == 'X') {
-                continue;
-            }
-            vis[nx][ny] = true;
-            q.push(nx);
-            q.push(ny);
-            mp[nx][ny] = mp[x][y] + direction[i];
-            if (s[nx][ny] == 'E') {
-                return mp[nx][ny];
-            }
-        }
-    }
-    return "Impossible";
-}
+using ll = long long;
+const ll a_lim = 1e18;
 
 int main() {
 
-    cin >> t;
+    int g, c;
 
-    for (cs = 1; cs <= t; cs++) {
-    
-        cin >> n >> m;
+    ll a, u;
 
+    cin >> g;
 
-        for (int i = 0; i < n; i++) {
-            cin >> s[i];
-        }
+    c = 0;
 
-        string ans = bfs();
+    assert(1 <= g && g <= 100);
 
-        cout << "Case #" << cs << ": " << ans << "\n";
+    while (g--) {
 
+        cin >> a >> u;
+
+        assert(1 <= a && a <= a_lim);
+
+        assert(0 <= u && u <= a);
+
+        ll gc = gcd(a, u);
+        
+        assert(gc);
+
+        a /= gc;
+
+        u /= gc;
+
+        assert(u <= a);
+
+        cout << "Game #" << ++c << ": " << u << " / " << a << "\n";
     }
+
     return 0;
 }

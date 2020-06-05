@@ -1,22 +1,25 @@
-Given **N** x **M** grid, find the lexicographically smallest path from, **S** to **E**.
+In video gaming parlance, an achievement, also sometimes known as a trophy, badge, award, stamp, medal, challenge, cheevo or in game achievement, is a meta-goal defined outside a game's parameters. Unlike the in-game systems of quests, tasks, and/or levels that usually define the goals of a video game and have a direct effect on further gameplay, the management of achievements usually takes place outside the confines of the game environment and architecture. Meeting the fulfillment conditions, and receiving recognition of fulfillment by the game, is referred to as unlocking the achievement.
 
-If a path does not exist, print **"Impossible"**
+**Makorsha-Manov** is an avid gamer. He loves collecting games and playing them. And most importantly, he loves unlocking achievements.
+
+Recently he started a youtube channel to stream live plays. For his youtube channel, he decided to create a banner detailing his video game achievements.
+
+Help him by calculating the percentage of achievement he unlocked for a given game.
+
+Print the **percentage** as **Irreducible Fraction**. Eg: x / y, where x and y can not be reduced further.
 
 **Input format:**
+Input starts with a number **G**, the number of games.
+For each game, there will be two numbers, **A**, number of achievement available in each game, **U** number of achievement unlocked by **Makorsha-Manov**.
 
-1 <= **T** <= 10, where T = number of case.
+**Constraints:**
 
-1 <= **N** <= 2000
+1 <= **G** <= 100, where G = number of game.
 
-1 <= **M** <= 2000
+1 <= **A** <= 1<sup>18</sup>.
 
-G<sub>x, y</sub> = ['X.', 'S', 'E'], 
-
-where X = Impassable point.
-where . = Passable point.
-where S = Starting point.
-where E = End point.
+0 <= **U** <= A.
 
 **Output format:**
 
-Case #C: s, where s = lexicographically smallest path if a path exists, else s = "Impossible", C = number of case.
+Game #C: x / y, where C = game number.
