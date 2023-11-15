@@ -23,3 +23,24 @@ For each game, there will be two numbers, **A**, number of achievement available
 **Output format:**
 
 Game #C: x / y, where C = game number.
+
+**Sample Input**
+```
+3
+4 3
+1 1
+4 1
+3
+5 1
+2 0
+1 0
+```
+**Sample Output**
+```
+Game #1: 3 / 4
+Game #2: 1 / 1
+Game #3: 1 / 4
+Game #1: 1 / 5
+Game #2: 0 / 1
+Game #3: 0 / 1
+```
