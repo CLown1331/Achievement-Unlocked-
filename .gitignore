@@ -1,5 +1,7 @@
 *.zip
 input/
 output/
+Output/
+Input/
 *.out
 .vscode
