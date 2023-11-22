@@ -34,5 +34,5 @@ echo small output generated
 ./sol.out < Input/input08.txt > Output/output08.txt
 ./sol.out < Input/input09.txt > Output/output09.txt
 echo medium output generated
-zip testcase.zip Input/* Output/* Config.ini
+zip testcase.zip Input/* Output/* Config.json
 echo testcase zipped
