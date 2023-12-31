@@ -1,3 +1,7 @@
+# **Limit**
+## *Time : 2 sec*
+## *Memory : 64 MB*
+
 In video gaming parlance, an achievement, also sometimes known as a trophy, badge, award, stamp, medal, challenge, cheevo or in game achievement, is a meta-goal defined outside a game's parameters. Unlike the in-game systems of quests, tasks, and/or levels that usually define the goals of a video game and have a direct effect on further gameplay, the management of achievements usually takes place outside the confines of the game environment and architecture. Meeting the fulfillment conditions, and receiving recognition of fulfillment by the game, is referred to as unlocking the achievement.
 
 **Makorsha-Manov** is an avid gamer. He loves collecting games and playing them. And most importantly, he loves unlocking achievements.
